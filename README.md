@@ -82,7 +82,7 @@ This is precisely the **eigenvalue equation** for $C$. The amount of information
 
 $$u^T C \; u = \lambda$$
 
-$$\max \; u^T C \; u = \max \; \lambda$$
+$$\max \ u^T C \ u = \max \ \lambda$$
 
 The solution vector $u$ has the **largest eigenvalue**. This gives us $u_1$ — the first principal component.
 
