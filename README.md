@@ -92,4 +92,4 @@ Because eigenvectors are orthogonal to each other, $u_2$ is orthogonal to $u_1$ 
 
 Below is a video that provides a good intuitive explanation
 
-🎥 [Visual explanation of PCA (YouTube)](https://www.youtube.com/watch?v=FD4DeN81ODY&t=238s)
+[Visual explanation of PCA (YouTube)](https://www.youtube.com/watch?v=FD4DeN81ODY&t=238s)
