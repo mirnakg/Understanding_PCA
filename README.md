@@ -2,7 +2,7 @@
 
 Principal Component Analysis (PCA) transforms and combines features to project data into a lower dimension (e.g. a 2D plane) such that the **maximum variance** in the data is captured and displayed.
 
----
+
 
 ## The Covariance Matrix
 
@@ -17,7 +17,7 @@ To obtain principal components from the data, we first need the **covariance mat
 
 where $\text{Cov}(x_i, x_i) = \text{Var}(x_i)$.
 
----
+
 
 ## Eigenvalues & Eigenvectors
 
@@ -32,7 +32,7 @@ The covariance matrix $C$ has eigenvectors $u_1 \perp u_2 \perp \ldots \perp u_p
 
 $$u \cdot x_k^T$$
 
----
+
 
 ## Intuition: The Dot Product
 
@@ -46,7 +46,7 @@ If the magnitude of $B$ is 1, then:
 
 $$C = \vec{A} \cdot \hat{B} = |A|\cos(\theta)$$
 
----
+
 
 ## The PCA Objective Function
 
@@ -66,11 +66,11 @@ $$u^T u = 1$$
 
 **Expanding the objective:**
 
-$$\max \sum_{k} x_k^T u \; x_k^T u = \max \sum_{k} u^T x_k \; x_k^T u = \max \; u^T \left( \sum_{k} x_k \; x_k^T \right) u = \max \; u^T C \; u$$
+$$\max \sum_{k} x_k^T u \ x_k^T u = \max \sum_{k} u^T x_k \ x_k^T u = \max \ u^T \left( \sum_{k} x_k \ x_k^T \right) u = \max \ u^T C \ u$$
 
 **Applying the constraint via a Lagrange multiplier** (since $u^T u - 1 = 0$):
 
-$$u^T C \; u = u^T C \; u - \lambda(u^T u - 1)$$
+$$u^T C \ u = u^T C \ u - \lambda(u^T u - 1)$$
 
 To find the maximum, take the derivative with respect to $u$ and set it to zero:
 
@@ -80,7 +80,7 @@ $$Cu = \lambda u$$
 
 This is precisely the **eigenvalue equation** for $C$. The amount of information preserved after projection onto a given eigenvector is given by the corresponding eigenvalue:
 
-$$u^T C \; u = \lambda$$
+$$u^T C \ u = \lambda$$
 
 $$\max \ u^T C \ u = \max \ \lambda$$
 
@@ -93,3 +93,9 @@ Because eigenvectors are orthogonal to each other, $u_2$ is orthogonal to $u_1$ 
 Below is a video that provides a good intuitive explanation
 
 [Visual explanation of PCA (YouTube)](https://www.youtube.com/watch?v=FD4DeN81ODY&t=238s)
+
+---
+
+## Example: 
+
+The jupyter notebook provided contains an example of PCA applied to a public cancer dataset. 
