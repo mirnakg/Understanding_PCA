@@ -38,7 +38,7 @@ $$u \cdot x_k^T$$
 
 For a given data vector $x_k$, the dot product is **maximum** when $x_k$ is parallel to $u$, and **zero** when $x_k$ is perpendicular to $u$. In an abstract sense, the dot product represents *information preserved*.
 
-![Dot Product Illustration](dot_product.png)
+![Dot Product Illustration](dot_product_im.png)
 
 $$\vec{x} \cdot \hat{u} = |x||u|\cos(a)$$
 
